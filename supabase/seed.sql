@@ -1,0 +1,3 @@
+-- Add development-only data here after creating a local Auth user in Supabase Studio.
+-- Keep schema changes in migrations, never in this seed file.
+-- The application intentionally falls back to lib/mock-data.ts while this file is empty.

@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-02T11:39:32.1964152+07:00",
+  "title": "Design System: SKYMART",
+  "extensions": {
+    "colorMeta": {
+      "action-blue": { "role": "primary", "displayName": "Precision Blue", "canonical": "#246bfd", "tonalRamp": ["#061638", "#0b2868", "#103b98", "#154dc8", "#246bfd", "#6596fe", "#a6c1ff", "#e7efff"] },
+      "action-blue-deep": { "role": "primary", "displayName": "Deep Action Blue", "canonical": "#154fd1", "tonalRamp": ["#071535", "#0b255f", "#0f3589", "#1345b3", "#154fd1", "#5b82dc", "#9fb5ea", "#e3e9f8"] },
+      "signal-orange": { "role": "secondary", "displayName": "Arrival Orange", "canonical": "#ff6b35", "tonalRamp": ["#39140a", "#6a2411", "#9b3519", "#cc4622", "#ff6b35", "#ff9874", "#ffc4b2", "#fff0e9"] },
+      "success-green": { "role": "secondary", "displayName": "Ready Green", "canonical": "#16794b", "tonalRamp": ["#071d13", "#0b3522", "#104d31", "#146641", "#16794b", "#57a67c", "#9bd1b4", "#e1f5e9"] },
+      "focus-blue": { "role": "primary", "displayName": "Focus Blue", "canonical": "#0d5ce4", "tonalRamp": ["#061635", "#092763", "#0b3891", "#0d49bf", "#0d5ce4", "#5790eb", "#9fc0f3", "#e5effc"] },
+      "paper": { "role": "neutral", "displayName": "Cool Paper", "canonical": "#f6f7f9", "tonalRamp": ["#202226", "#3d4046", "#5b5e65", "#7b7e86", "#9da0a7", "#c0c2c8", "#e1e3e7", "#f6f7f9"] },
+      "surface": { "role": "neutral", "displayName": "Clean Surface", "canonical": "#ffffff", "tonalRamp": ["#242424", "#424242", "#616161", "#818181", "#a3a3a3", "#c6c6c6", "#e7e7e7", "#ffffff"] },
+      "graphite": { "role": "neutral", "displayName": "Graphite", "canonical": "#17191d", "tonalRamp": ["#17191d", "#30333a", "#4a4e57", "#656a74", "#82868f", "#a4a7ae", "#cecfd3", "#f2f2f3"] },
+      "muted-graphite": { "role": "neutral", "displayName": "Muted Graphite", "canonical": "#60656f", "tonalRamp": ["#191b1f", "#30343a", "#484d55", "#60656f", "#7f848d", "#a2a6ad", "#cbcdd1", "#f1f2f3"] },
+      "line": { "role": "neutral", "displayName": "Quiet Line", "canonical": "#dfe2e7", "tonalRamp": ["#202328", "#3c4148", "#5a6069", "#7a818b", "#9da3ac", "#bec3ca", "#dfe2e7", "#f5f6f7"] },
+      "line-strong": { "role": "neutral", "displayName": "Structural Line", "canonical": "#bec3cb", "tonalRamp": ["#1e2228", "#383e46", "#535b65", "#6f7782", "#8f969f", "#aab0b8", "#d0d4da", "#f2f3f5"] },
+      "aluminum": { "role": "neutral", "displayName": "Brushed Aluminum", "canonical": "#c9cdd4", "tonalRamp": ["#202328", "#3c4148", "#596068", "#777e87", "#969ca5", "#b4b9c0", "#d5d8dd", "#f3f4f5"] },
+      "aluminum-dark": { "role": "neutral", "displayName": "Dark Aluminum", "canonical": "#777f8b", "tonalRamp": ["#1b1e22", "#32373e", "#4a5059", "#626a75", "#777f8b", "#9da3ac", "#c5c8ce", "#eef0f2"] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Arrival Display", "purpose": "Storefront proposition and major page moments only." },
+      "headline": { "displayName": "Route Headline", "purpose": "Section changes and major shopping stages." },
+      "title": { "displayName": "Product Title", "purpose": "Docked product and compact commerce titles." },
+      "body": { "displayName": "Thai Body", "purpose": "Readable Thai descriptions and transactional content." },
+      "label": { "displayName": "Commerce Label", "purpose": "Seller, category, badge, stock, and status metadata." }
+    },
+    "shadows": [
+      { "name": "ambient-surface", "value": "0 16px 42px rgba(30, 38, 55, 0.08)", "purpose": "Soft lift for summaries and elevated commerce surfaces." },
+      { "name": "buying-dock", "value": "0 18px 46px rgba(42, 50, 62, 0.16)", "purpose": "Separates the active decision rail from the route." },
+      { "name": "route-marker", "value": "0 8px 20px rgba(47, 59, 75, 0.10)", "purpose": "Grounds the frosted active marker on mobile." },
+      { "name": "product-plinth", "value": "0 9px 5px rgba(24, 29, 36, 0.24)", "purpose": "Gives each runway product visible contact depth." },
+      { "name": "drawer-lift", "value": "-20px 0 54px rgba(22, 25, 31, 0.18)", "purpose": "Separates the cart drawer from the dimmed page." }
+    ],
+    "motion": [
+      { "name": "state-fast", "value": "180ms ease-out", "purpose": "Buttons, borders, color changes, and compact feedback." },
+      { "name": "route-arrival", "value": "480ms cubic-bezier(0.18, 0.9, 0.24, 1)", "purpose": "Active runway stop resizing and vertical arrival." },
+      { "name": "product-arrival", "value": "580ms cubic-bezier(0.18, 0.9, 0.24, 1)", "purpose": "Product fade, lift, and scale into the active stop." },
+      { "name": "drawer", "value": "380ms cubic-bezier(0.18, 0.9, 0.24, 1)", "purpose": "Cart drawer entry and exit." }
+    ],
+    "breakpoints": [
+      { "name": "compact-desktop", "value": "1100px" },
+      { "name": "mobile", "value": "800px" },
+      { "name": "small-mobile", "value": "480px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The precise blue action used for search, cart, and purchase commitment.",
+      "html": "<button class=\"ds-button-primary\">เพิ่มลงตะกร้า</button>",
+      "css": ".ds-button-primary { min-height: 48px; border: 1px solid transparent; border-radius: 10px; display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 0 20px; background: var(--blue, #246bfd); color: #fff; font: 650 14px/1.4 'Anuphan Variable', 'Noto Sans Thai', sans-serif; cursor: pointer; transition: background-color .18s ease-out, transform .18s ease-out; } .ds-button-primary:hover { background: var(--blue-dark, #154fd1); transform: translateY(-1px); } .ds-button-primary:active { transform: translateY(0); } .ds-button-primary:focus-visible { outline: 3px solid color-mix(in srgb, var(--focus, #0d5ce4), transparent 25%); outline-offset: 3px; }"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "A quiet bordered action for product detail and supporting decisions.",
+      "html": "<button class=\"ds-button-secondary\">ดูรายละเอียด</button>",
+      "css": ".ds-button-secondary { min-height: 48px; border: 1px solid var(--line-strong, #bec3cb); border-radius: 10px; display: inline-flex; align-items: center; justify-content: center; padding: 0 20px; background: transparent; color: var(--ink, #17191d); font: 650 14px/1.4 'Anuphan Variable', 'Noto Sans Thai', sans-serif; cursor: pointer; transition: background-color .18s ease-out, border-color .18s ease-out, transform .18s ease-out; } .ds-button-secondary:hover { border-color: var(--ink, #17191d); background: #fff; transform: translateY(-1px); } .ds-button-secondary:active { transform: translateY(0); } .ds-button-secondary:focus-visible { outline: 3px solid color-mix(in srgb, var(--focus, #0d5ce4), transparent 25%); outline-offset: 3px; }"
+    },
+    {
+      "name": "Header Search",
+      "kind": "input",
+      "refersTo": "search-field",
+      "description": "A compact white search field that recedes within the sticky header.",
+      "html": "<label class=\"ds-search\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><circle cx=\"11\" cy=\"11\" r=\"7\"></circle><path d=\"m20 20-4-4\"></path></svg><input aria-label=\"ค้นหาสินค้า\" placeholder=\"ค้นหาสินค้า\"></label>",
+      "css": ".ds-search { width: 320px; height: 42px; border: 1px solid var(--line, #dfe2e7); background: #fff; display: flex; align-items: center; gap: 10px; padding: 0 14px; border-radius: 10px; color: var(--ink, #17191d); transition: border-color .18s ease-out, box-shadow .18s ease-out; } .ds-search:hover { border-color: var(--line-strong, #bec3cb); } .ds-search:focus-within { border-color: var(--blue, #246bfd); box-shadow: 0 0 0 3px rgba(36, 107, 253, .12); } .ds-search svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 2; } .ds-search input { min-width: 0; width: 100%; border: 0; outline: 0; background: transparent; color: inherit; font: 400 14px/1.55 'Anuphan Variable', 'Noto Sans Thai', sans-serif; } .ds-search input:focus-visible { outline: 0; } .ds-search input::placeholder { color: #777d87; }"
+    },
+    {
+      "name": "Storefront Navigation",
+      "kind": "nav",
+      "description": "The quiet sticky navigation with a blue brand fragment and graphite cart action.",
+      "html": "<nav class=\"ds-nav\"><strong>SKY<span>MART</span></strong><a href=\"#\">หมวดหมู่</a><a href=\"#\">สินค้า</a><button aria-label=\"ตะกร้า\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M3 4h2l2 11h10l2-8H6\"></path><circle cx=\"9\" cy=\"19\" r=\"1\"></circle><circle cx=\"17\" cy=\"19\" r=\"1\"></circle></svg><i>2</i></button></nav>",
+      "css": ".ds-nav { height: 72px; border-bottom: 1px solid rgba(190, 195, 203, .75); background: rgba(246, 247, 249, .94); backdrop-filter: blur(12px); display: flex; align-items: center; gap: 22px; padding: 0 24px; color: var(--ink, #17191d); font: 400 14px/1.55 'Anuphan Variable', 'Noto Sans Thai', sans-serif; } .ds-nav strong { margin-right: 6px; font-size: 21px; line-height: 1; font-weight: 820; letter-spacing: -.035em; } .ds-nav strong span { color: var(--blue, #246bfd); } .ds-nav a { color: #484d56; text-decoration: none; } .ds-nav a:hover { color: var(--ink, #17191d); } .ds-nav a:focus-visible, .ds-nav button:focus-visible { outline: 3px solid color-mix(in srgb, var(--focus, #0d5ce4), transparent 25%); outline-offset: 3px; } .ds-nav button { position: relative; margin-left: auto; width: 44px; height: 44px; border: 0; border-radius: 10px; background: var(--ink, #17191d); color: #fff; display: grid; place-items: center; cursor: pointer; } .ds-nav button:hover { background: #30333a; } .ds-nav button:active { transform: translateY(1px); } .ds-nav svg { width: 20px; fill: none; stroke: currentColor; stroke-width: 2; } .ds-nav i { position: absolute; right: -4px; top: -4px; min-width: 20px; height: 20px; padding: 0 5px; border-radius: 999px; background: var(--orange, #ff6b35); color: #19110d; display: grid; place-items: center; font: 800 11px/1 sans-serif; font-style: normal; }"
+    },
+    {
+      "name": "Frosted Route Marker",
+      "kind": "chip",
+      "description": "The translucent active stop marker used along the product route.",
+      "html": "<button class=\"ds-route-marker\" aria-pressed=\"true\"><span>01</span><b>เครื่องเสียง</b></button>",
+      "css": ".ds-route-marker { min-height: 44px; width: 260px; border: 1px solid rgba(255, 255, 255, .88); border-radius: 12px; display: grid; grid-template-columns: 34px 1fr; align-items: center; gap: 10px; padding: 0 15px; background: linear-gradient(135deg, rgba(255,255,255,.9), rgba(233,240,248,.56) 48%, rgba(207,217,230,.72)); color: var(--ink, #17191d); box-shadow: 0 5px 14px rgba(56, 67, 82, .08); text-align: left; cursor: pointer; } .ds-route-marker span { color: var(--muted, #60656f); font: 400 11px/1.4 'Anuphan Variable', sans-serif; } .ds-route-marker b { font: 640 13px/1.4 'Anuphan Variable', 'Noto Sans Thai', sans-serif; } .ds-route-marker:hover { box-shadow: 0 8px 20px rgba(47, 59, 75, .1); } .ds-route-marker:active { transform: translateY(1px); } .ds-route-marker:focus-visible { outline: 3px solid color-mix(in srgb, var(--focus, #0d5ce4), transparent 25%); outline-offset: 3px; }"
+    },
+    {
+      "name": "Product Runway Stop",
+      "kind": "custom",
+      "description": "Candidate 3's seeded Aerial Carousel stop, grounded on a physical plinth above the brushed route (seed 61952f2f).",
+      "html": "<button class=\"ds-runway-stop\" aria-selected=\"true\"><span class=\"ds-stop-number\">01</span><span class=\"ds-stop-stage\"><i></i><b>สินค้า</b></span><span class=\"ds-stop-name\">ลำโพงพกพา</span></button>",
+      "css": ".ds-runway-stop { width: 280px; height: 235px; border: 0; background: linear-gradient(to bottom, transparent 0 47%, #f8fafc 47% 50%, #c7ccd3 51% 61%, #eef1f4 62% 72%, #aeb5be 73% 88%, #d8dde2 89%); color: var(--ink, #17191d); display: grid; grid-template-rows: 20px 1fr 24px; align-items: end; padding: 0 14px 39px; border-radius: 14px; cursor: pointer; transition: transform .48s cubic-bezier(.18,.9,.24,1), width .48s cubic-bezier(.18,.9,.24,1); } .ds-runway-stop:hover { transform: translateY(-7px); } .ds-runway-stop:active { transform: translateY(-3px); } .ds-runway-stop:focus-visible { outline: 3px solid color-mix(in srgb, var(--focus, #0d5ce4), transparent 25%); outline-offset: 3px; } .ds-stop-number { align-self: start; justify-self: start; color: var(--muted, #60656f); font: 400 11px/1.4 'Anuphan Variable', sans-serif; } .ds-stop-stage { position: relative; height: 155px; display: grid; place-items: end center; } .ds-stop-stage i { position: absolute; left: 10%; right: 10%; bottom: 1px; height: 22px; border-radius: 50%; background: radial-gradient(ellipse, #f9fbfd 0 34%, #a9b0b9 37% 53%, #616973 56% 61%, transparent 64%); filter: drop-shadow(0 9px 5px rgba(24,29,36,.24)); } .ds-stop-stage b { position: relative; margin-bottom: 20px; width: 74px; height: 74px; border-radius: 14px; display: grid; place-items: center; background: #fff; box-shadow: 0 18px 13px rgba(27,31,39,.2); font: 640 12px/1.4 'Anuphan Variable', sans-serif; } .ds-stop-name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; text-align: left; font: 640 13px/1.4 'Anuphan Variable', 'Noto Sans Thai', sans-serif; }"
+    },
+    {
+      "name": "Buying Dock",
+      "kind": "card",
+      "refersTo": "buying-dock",
+      "description": "The active product's semantic decision rail with stock, seller, rating, price, and actions.",
+      "html": "<article class=\"ds-buying-dock\"><div class=\"ds-dock-status\"><i></i>พร้อมจัดส่ง · เหลือ 8 ชิ้น</div><div class=\"ds-dock-main\"><div><small>Northwind Studio</small><h3>ลำโพงพกพา</h3><span>★ 4.8 · 128 รีวิว</span></div><strong>฿2,490</strong></div><div class=\"ds-dock-actions\"><button>ดูรายละเอียด</button><button>เพิ่มลงตะกร้า</button></div></article>",
+      "css": ".ds-buying-dock { width: min(680px, calc(100% - 32px)); background: rgba(255,255,255,.96); border: 1px solid rgba(255,255,255,.9); box-shadow: 0 18px 46px rgba(42,50,62,.16); border-radius: 14px; padding: 14px 20px 16px; color: var(--ink, #17191d); font-family: 'Anuphan Variable', 'Noto Sans Thai', sans-serif; } .ds-dock-status { display: flex; align-items: center; gap: 8px; padding-bottom: 12px; border-bottom: 1px solid var(--line, #dfe2e7); color: var(--green, #16794b); font-size: 12px; } .ds-dock-status i { width: 8px; height: 8px; border-radius: 50%; background: #41b77a; box-shadow: 0 0 0 4px rgba(65,183,122,.12); } .ds-dock-main { display: flex; justify-content: space-between; gap: 24px; padding: 12px 0; } .ds-dock-main small { color: var(--muted, #60656f); font-size: 12px; } .ds-dock-main h3 { margin: 4px 0 5px; font-size: 24px; line-height: 1.28; letter-spacing: -.02em; font-weight: 640; } .ds-dock-main span { color: #9f551c; font-size: 13px; } .ds-dock-main > strong { white-space: nowrap; font-size: 34px; letter-spacing: -.035em; } .ds-dock-actions { display: flex; justify-content: flex-end; gap: 10px; } .ds-dock-actions button { min-height: 48px; border-radius: 10px; padding: 0 20px; border: 1px solid var(--line-strong, #bec3cb); background: transparent; color: var(--ink, #17191d); font-family: 'Anuphan Variable', 'Noto Sans Thai', sans-serif; font-size: 13px; font-weight: 650; line-height: 1.4; cursor: pointer; transition: transform .18s ease-out, background-color .18s ease-out; } .ds-dock-actions button:last-child { border-color: transparent; background: var(--blue, #246bfd); color: #fff; } .ds-dock-actions button:hover { transform: translateY(-1px); } .ds-dock-actions button:last-child:hover { background: var(--blue-dark, #154fd1); } .ds-dock-actions button:active { transform: translateY(0); } .ds-dock-actions button:focus-visible { outline: 3px solid color-mix(in srgb, var(--focus, #0d5ce4), transparent 25%); outline-offset: 3px; }"
+    },
+    {
+      "name": "Category Route Row",
+      "kind": "custom",
+      "description": "An indexed dark route into category discovery, kept close to the first viewport.",
+      "html": "<a class=\"ds-category-row\" href=\"#\"><span>01</span><i></i><b><small>HOME</small>บ้านและการใช้ชีวิต</b><em>ของใช้ที่ช่วยให้ทุกวันเป็นระบบ</em><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M5 12h14M13 6l6 6-6 6\"></path></svg></a>",
+      "css": ".ds-category-row { min-height: 126px; display: grid; grid-template-columns: 56px 90px .8fr 1fr 40px; gap: 28px; align-items: center; border-top: 1px solid #3b3e44; border-bottom: 1px solid #3b3e44; padding: 0 16px; background: var(--ink, #17191d); color: #fff; text-decoration: none; font-family: 'Anuphan Variable', 'Noto Sans Thai', sans-serif; transition: background-color .2s ease-out, padding .2s ease-out; } .ds-category-row:hover { background: #22252a; padding-inline: 24px 8px; } .ds-category-row:active { background: #2a2d32; } .ds-category-row:focus-visible { outline: 3px solid color-mix(in srgb, var(--focus, #0d5ce4), transparent 10%); outline-offset: 3px; } .ds-category-row > span { color: #838892; font-size: 13px; } .ds-category-row > i { width: 90px; height: 72px; border-radius: 10px; background: linear-gradient(135deg, #c9cdd4, #777f8b); } .ds-category-row > b { display: flex; flex-direction: column; font-size: 22px; font-weight: 590; } .ds-category-row small { color: #a8bff6; font-size: 12px; font-weight: 550; } .ds-category-row em { max-width: 38ch; color: #b6bac2; font-size: 13px; font-style: normal; } .ds-category-row svg { width: 24px; fill: none; stroke: currentColor; stroke-width: 2; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Aerial Product Route",
+    "overview": "SKYMART turns marketplace browsing into a calm sequence of useful arrivals. Cool white space, graphite type, precise blue actions, and restrained warm signals keep the interface quiet enough for product photography and decision-critical facts to lead.\n\nIts defining material language is transportation hardware made approachable: brushed-aluminum routes carry products toward frosted markers, shallow plinths give each object physical weight, and the active item docks into a bright buying surface. The system is clean and premium without borrowing another brand's trade dress; clarity, explicit state, and Thai legibility remain functional constraints.",
+    "keyCharacteristics": [
+      "Product-led composition with restrained interface chrome.",
+      "Brushed metal, frosted glass, and controlled shadow create purposeful depth.",
+      "Precise blue actions use warm orange and green only for meaningful signals.",
+      "The horizontal desktop runway becomes a vertical mobile stepper.",
+      "Category discovery begins early instead of hiding beneath a promotional wall."
+    ],
+    "rules": [
+      { "name": "The Quiet Chrome Rule", "body": "Product imagery may carry saturated color; interface chrome remains cool and exact.", "section": "colors" },
+      { "name": "The Rare Signal Rule", "body": "Orange and green mark specific commerce states, never broad decoration.", "section": "colors" },
+      { "name": "The Thai-First Measure Rule", "body": "Never tighten type or narrow a control until longer Thai text has been tested without clipping.", "section": "typography" },
+      { "name": "The Early Category Rule", "body": "Let the next category index begin within the first scroll; do not let an oversized promotional hero postpone useful browsing.", "section": "layout" },
+      { "name": "The Grounded Object Rule", "body": "Every runway product sits on a visible plinth; floating cutouts without contact depth break the arrival metaphor.", "section": "elevation" },
+      { "name": "The Earned Elevation Rule", "body": "Use strong shadows only for active, docked, or overlay surfaces.", "section": "elevation" },
+      { "name": "The Radius Has a Job Rule", "body": "Choose corner shape by hierarchy and function; do not apply pill styling as a generic sign of friendliness.", "section": "shapes" }
+    ],
+    "dos": [
+      "Do keep price, seller, stock, delivery, rating, and the next action visible around the active product.",
+      "Do preserve the rebuilt brushed-metal route, frosted active markers, and visible product plinth depth.",
+      "Do convert the runway to the vertical mobile stepper at 800px and below.",
+      "Do begin category discovery early and maintain generous stage-to-stage spacing.",
+      "Do retain 44px-or-larger mobile targets, visible focus, and reduced-motion behavior."
+    ],
+    "donts": [
+      "Don't replace the runway with a promotional banner followed by an undifferentiated product grid.",
+      "Don't saturate interface chrome or use orange and green as general decoration.",
+      "Don't round every surface into pills or soften the linear category route.",
+      "Don't hide decision-critical facts behind hover, ambiguous icons, or color-only status.",
+      "Don't collapse mobile into a clipped desktop carousel or postpone categories below a full-screen hero."
+    ]
+  }
+}
